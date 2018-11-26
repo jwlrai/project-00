@@ -10,8 +10,7 @@ In this project i have created a my personal website
 ```
 
 ## Process/Approach :
-Before starting coding i made all wireframe of the design and after that I started  codeing for bigger screen size, above 1100px at max, contuning along with the small size.
-![Main Page wireframe](wireframe.png| width = 300 )
+Before starting coding i made all wireframe of the design and after that I started  codeing for bigger screen size, above 1100px at max, continuing along with the small size.
 <img src="wireframe.png" width="300">
 I used mozilla, web developer > responsive desing mode,  tool to check the effect on website depending to changes in screen width. wherever any undesired changes occured in the webiste i used another css rules
 for that particular screen size. For instance
@@ -21,3 +20,11 @@ for that particular screen size. For instance
     //
  }
 ```
+
+## Unsolved probles :
+whenever the child elements position has an absolute value it's parent element gets collapsed.
+I was unable to figure out any alternatives to this situation.
+
+## Challenges and Solution :
+the challenging part for me was to move the texts in a particular path to give an animative effect. To solve this challenge i made a new javascript library which moves the texts in difined beizer curve. I will soon be publishing my library in github.
+
