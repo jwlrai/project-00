@@ -1,15 +1,3 @@
 body{
     color:black !important;
 }
-@media (max-width: 800px) {
-    #home > div:first-child>div h2{
-      
-        left:20%;
-       
-    }
-    #home > div:first-child>div p{
-       
-        left:17%;
-        
-    }
- }

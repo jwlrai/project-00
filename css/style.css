@@ -465,7 +465,7 @@ body > footer{
         background-color:rgb(25, 56, 211);
     }
     body> header  h1 a:first-child{
-        display: inline-block;
+        display: inline-block`;
         }
     body> header h1:after{
         content: " ";
