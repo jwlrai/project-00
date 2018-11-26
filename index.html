@@ -6,12 +6,161 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     
-    <title>Document</title>
+    <title>Ujwal rai</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto|Roboto+Mono:500" rel="stylesheet">
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="js/bazerText.js"></script>
 </head>
 <body>
-    <div id="field">
-        <div id="nav1">ujwal rai</div>
-    </div>
+    <header class="">
+        <div class="clearfix">
+            <h1 class="floatLeft"><a class="bgr"><img src="images/burger.png"/><a href="#home" class="selctNav">ujwal rai</a></h1>
+            <div></div>
+            <nav class="floatRight">
+                <ul>
+                    <li><a href="#about" class="">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+        <main>
+            <section id="home" >
+                <div >
+                    <div class="container">
+                            <h2 id="mh">Ujwal Rai</h2>
+                            <p id="md">Full Stack Developer | </p>
+                            <p id="md-1">Focus on Backend</p>
+                    </div>
+                    
+                </div>
+                <div >
+                    <div class="container">
+
+                    </div>
+                </div>
+            </section>
+            <section id="about" >
+                <div class="container" >
+                    <h2>About Me</h2>
+                    <p>I am curious in nature, always eager to explorer new ideas and learn new technologies. I have always been passionate about facing new challenges and tackling them logically with a reliable solution. I always want and try to optimize my skills and keep my knowledged updated.</p>
+                    <p>I recently Moved to the United States. So far this phase has been a challenge for me. I am struggling and working hard to establish my carrier and looking forward to new oppertunities</p>
+                    <p><strong>Current Focus : </strong><span class="blue">NodeJS</span> / <span class="blue">Python</span> / <span class="blue">MongoDB</span></p>
+                </div>
+            </section>
+            <section id="Portfolio" >
+                    <div class="container" >
+                        <h2>Projects</h2>
+                        <div>
+                                <div class="crsl">
+                                        <div class="sld_nav">
+                                                <ul>
+                                                    <li  data-slide = "1" ></li>
+                                                    <li  data-slide = "2" ></li>
+                                                    <li  data-slide = "3" ></li>
+                                                    <li  data-slide = "4" ></li>
+                                                </ul>
+                                            </div>
+                                    <div class="clearfix">
+                                        <div data-slide = "1" class="sld clearfix ">
+                                            <div class="floatLeft">
+                                                    <img src="images/weatherproject.jpg">
+                                            </div>
+                                            <div class="floatLeft">
+                                                <h3>Current weather status & forecast</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi eum facilis natus dolores nihil hic pariatur velit, dolore quos vitae amet? Incidunt et at accusamus aut ex possimus quo!</p>
+                                            </div>
+                
+                                        </div>
+                                        <div data-slide = "2" class="sld clearfix ">
+                                            <div class="floatLeft">
+                                                    <img src="images/supermarket.png">
+                                            </div>
+                                            <div class="floatLeft">
+                                                <h3>Supermarket Cart</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi eum facilis natus dolores nihil hic pariatur velit, dolore quos vitae amet? Incidunt et at accusamus aut ex possimus quo!</p>
+                                            </div>
+                
+                                        </div>
+                                        <div data-slide = "3" class="sld clearfix displayOff">
+                                            <div class="floatLeft">
+                                                    <img src="images/monument.png">
+                                            </div>
+                                            <div class="floatLeft">
+                                                <h3>Monument</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi eum facilis natus dolores nihil hic pariatur velit, dolore quos vitae amet? Incidunt et at accusamus aut ex possimus quo!</p>
+                                            </div>
+                
+                                        </div>
+                                        
+                                        <div data-slide = "4" class="sld clearfix displayOff">
+                                            <div class="floatLeft">
+                                                    <img src="images/mousecontrol.png">
+                                            </div>
+                                            <div class="floatLeft">
+                                                <h3>Mouse Control Training Game</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi eum facilis natus dolores nihil hic pariatur velit, dolore quos vitae amet? Incidunt et at accusamus aut ex possimus quo!</p>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                       
+                                </div>
+                        </div>
+                        
+                        
+
+                    </div>
+            </section>
+            <section id="contact" >
+                <div class="container" >
+                    <h2 >Contact Me</h2>
+                    <form>
+                    <div>
+                        
+                            <div>
+                                <div>
+                                    <p>Name</p>
+                                    <p><input autocomplete="off" required type="text" name="name" pattern="^[A-Za-z0-9- ]+$"/></p>
+                                </div>
+                                <div>
+                                    <p>Email</p>
+                                    <p><input  autocomplete="off" required type="email" name="name"/></p>
+                                </div>
+                                <div>
+                                    <p>Phone Number</p>
+                                    <p><input  autocomplete="off" required type="number" name="name"/></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p>Message</p>
+                                    <textarea  autocomplete="off" required pattern="/^[a-z\d\-_\s]+$/i"></textarea>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div>
+                        <input class="btnOutline" type="reset" value="Reset" name="reset" />
+                        <input class="btn" name="submit" value="submit" type="submit">
+                    </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                    <small>Copyright &copy; 2018 Ujwal Rai</small>
+            </div>
+        </footer>
+       
     
     <script src="js/mian.js"></script>
 </body>
