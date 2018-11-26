@@ -12,6 +12,8 @@ In this project i have created a my personal website
 ## Process/Approach :
 Before starting coding i made all wireframe of the design and after that I started  codeing for bigger screen size, above 1100px at max, continuing along with the small size.
 <img src="wireframe.png" width="300">
+
+
 I used mozilla, web developer > responsive desing mode,  tool to check the effect on website depending to changes in screen width. wherever any undesired changes occured in the webiste i used another css rules
 for that particular screen size. For instance
 ```

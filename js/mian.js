@@ -62,7 +62,7 @@ var nme = new beizerText({
                     else{
                         carousel(nxt);
                     }j
-                },3000);
+                },2000);
            
         }
         carousel('.crsl > div div.sld:nth-child(1)');
@@ -74,13 +74,40 @@ var nme = new beizerText({
             carouselEle = jq('.crsl > div div.sld:nth-child('+slide+')');
           
         });
+      
+        
+     
         jq(document).scroll(function(){
+            var scrols = [0,jq('#about').offset().top-30,jq('#Portfolio').offset().top-30,jq('#contact').offset().top-30];
             var y = window.scrollY;
+            var navA = jq('nav ul li a');
+            var headerA =  jq('body > header h1> a:last-child');
             if(y > 0){
                 if(!jq('body>header').hasClass('shadow')){
                     jq('body>header').addClass('shadow');
                 }
-                
+                if(parseInt(jq(window).width()) > 415){
+                    if(y > scrols[0] && y < scrols[1]){
+                        navA.removeClass('selctNav');
+                        headerA.addClass('selctNav');
+                    }
+                    else if(y > scrols[1] && y < scrols[2]){
+                        navA.removeClass('selctNav');
+                        headerA.removeClass('selctNav');
+                        jq('nav ul li:nth-child(1) a').addClass('selctNav');
+                    }
+                    else if(y > scrols[2] && y < scrols[3]){
+                        navA.removeClass('selctNav');
+                        headerA.removeClass('selctNav');
+                        jq('nav ul li:nth-child(2) a').addClass('selctNav');
+                    }
+                    else if(y > scrols[3]){
+                        navA.removeClass('selctNav');
+                        headerA.removeClass('selctNav');
+                        jq('nav ul li:nth-child(3) a').addClass('selctNav');
+                    }
+                }
+               
             }
             else if(y == 0){
                 if(jq('body>header').hasClass('shadow')){
@@ -105,15 +132,15 @@ var nme = new beizerText({
         jq('nav ul li a').click(function(e){
             e.preventDefault();
             
-            
-         
             jq('html, body').animate({
                 scrollTop:  jq(jq(this).attr('href')).offset().top
             }, 500);
-            if(screen.width <= 415){
+            
+            if(parseInt(jq(window).width()) <= 415){
                 jq('body> header  h1 a:first-child').trigger('click');
             }
             else{
+
                 jq('nav ul li a').removeClass('selctNav');
                 jq('body> header  h1 a').removeClass('selctNav');
                 jq(this).addClass('selctNav');

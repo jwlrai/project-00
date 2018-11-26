@@ -213,7 +213,7 @@ display: none;
     padding-top:400px;
 }
 .sld{
-    transition:all 2s ease;
+    transition:all 1s ease;
     border:1px solid #d1d1d1;
     padding:30px;
     background-color:white;
@@ -465,7 +465,7 @@ body > footer{
         background-color:rgb(25, 56, 211);
     }
     body> header  h1 a:first-child{
-        display: inline-block`;
+        display: inline-block;
         }
     body> header h1:after{
         content: " ";
